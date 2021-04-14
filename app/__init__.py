@@ -1,4 +1,4 @@
-from flask import flask
+from flask import Flask
 
 def create_app(test_config=None):
     # set up app config
@@ -7,4 +7,9 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY='super_secret_key'
     )
+
+    @app.route('/hello')
+    def hello():
+        return 'Ca va ami!'
+        
     return app
