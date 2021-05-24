@@ -1,2 +1,2 @@
 # 🐍 Slithering News
-refactoring a blog sites backend from node.js to python
+refactoring a blog site's backend from node.js to python
